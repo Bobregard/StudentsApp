@@ -7,6 +7,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{FA7D94E8-47D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentsApp.Web", "Web\StudentsApp.Web\StudentsApp.Web.csproj", "{D74B4DA5-8F1F-4870-89B5-7E2EAA9D7A5A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{7B03FB33-23B5-45DA-ADCF-52F2A99FCCB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentsApp.Data", "Data\StudentsApp.Data\StudentsApp.Data.csproj", "{D6A98489-5744-4899-935A-A653F2D98881}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentsApp.Data.Models", "Data\StudentsApp.Data.Models\StudentsApp.Data.Models.csproj", "{34CE2EA8-AAD0-4112-BF60-DB80BF684115}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,11 +23,21 @@ Global
 		{D74B4DA5-8F1F-4870-89B5-7E2EAA9D7A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D74B4DA5-8F1F-4870-89B5-7E2EAA9D7A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D74B4DA5-8F1F-4870-89B5-7E2EAA9D7A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6A98489-5744-4899-935A-A653F2D98881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6A98489-5744-4899-935A-A653F2D98881}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6A98489-5744-4899-935A-A653F2D98881}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6A98489-5744-4899-935A-A653F2D98881}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34CE2EA8-AAD0-4112-BF60-DB80BF684115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34CE2EA8-AAD0-4112-BF60-DB80BF684115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34CE2EA8-AAD0-4112-BF60-DB80BF684115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34CE2EA8-AAD0-4112-BF60-DB80BF684115}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D74B4DA5-8F1F-4870-89B5-7E2EAA9D7A5A} = {FA7D94E8-47D6-4845-9930-DE5BAEF78E68}
+		{D6A98489-5744-4899-935A-A653F2D98881} = {7B03FB33-23B5-45DA-ADCF-52F2A99FCCB8}
+		{34CE2EA8-AAD0-4112-BF60-DB80BF684115} = {7B03FB33-23B5-45DA-ADCF-52F2A99FCCB8}
 	EndGlobalSection
 EndGlobal

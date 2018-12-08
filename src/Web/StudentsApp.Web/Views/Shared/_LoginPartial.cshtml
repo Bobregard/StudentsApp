@@ -1,7 +1,8 @@
 @using Microsoft.AspNetCore.Identity
+@using StudentsApp.Web.Areas.Identity.Data
 
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
+@inject SignInManager<StudentsAppUser> SignInManager
+@inject UserManager<StudentsAppUser> UserManager
 
 @if (SignInManager.IsSignedIn(User))
 {
