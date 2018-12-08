@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 
-namespace StudentsApp.Web.Areas.Identity.Data
+namespace StudentsApp.Data.Models
 {
     // Add profile data for application users by adding properties to the StudentsAppUser class
     public class StudentsAppUser : IdentityUser

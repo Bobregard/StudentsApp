@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using StudentsApp.Web.Areas.Identity.Data;
+using StudentsApp.Data.Models;
 
-namespace StudentsApp.Web.Models
+namespace StudentsApp.Data
 {
     public class StudentsAppContext : IdentityDbContext<StudentsAppUser>
     {

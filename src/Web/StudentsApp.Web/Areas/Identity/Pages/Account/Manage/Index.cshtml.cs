@@ -8,7 +8,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using StudentsApp.Web.Areas.Identity.Data;
+using StudentsApp.Data.Models;
+
 
 namespace StudentsApp.Web.Areas.Identity.Pages.Account.Manage
 {

@@ -11,8 +11,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using StudentsApp.Web.Models;
-using StudentsApp.Web.Areas.Identity.Data;
+using StudentsApp.Data;
+using StudentsApp.Data.Models;
 
 namespace StudentsApp.Web
 {
@@ -40,7 +40,16 @@ namespace StudentsApp.Web
             services.AddDbContext<StudentsAppContext>(options =>
                 options.UseSqlServer(
                     this.Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<StudentsAppUser>()
+            services.AddDefaultIdentity<StudentsAppUser>(
+                options =>
+                {
+                    options.Password.RequireDigit = false;
+                    options.Password.RequiredLength = 3;
+                    options.Password.RequiredUniqueChars = 0;
+                    options.Password.RequireLowercase = false;
+                    options.Password.RequireUppercase = false;
+                    options.Password.RequireNonAlphanumeric = false;
+                })
                 .AddEntityFrameworkStores<StudentsAppContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
